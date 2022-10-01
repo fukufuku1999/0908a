@@ -148,7 +148,7 @@
     }
 
             async function loop() {
-                webcam.update({ facingMode: { exact: "user" } }); // update the webcam frame      //environment
+                webcam.update({ facingMode: { exact: "environment" } }); // update the webcam frame      //environment
                 await predict();
                 window.requestAnimationFrame(loop);
     }
